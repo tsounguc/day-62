@@ -59,6 +59,7 @@ def cafes():
         csv_data = csv.reader(csv_file, delimiter=',')
         list_of_rows = []
         for row in csv_data:
+            print(row)
             list_of_rows.append(row)
     return render_template('cafes.html', cafes=list_of_rows)
 
