@@ -67,7 +67,7 @@ def add_cafe():
                     csv_file.write(row[index])
                     csv_file.write(", ")
 
-
+        return render_template('cafes.html')
 
     # Exercise:
     # Make the form write a new row into cafe-data.csv
