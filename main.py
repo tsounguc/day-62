@@ -60,14 +60,14 @@ def add_cafe():
             for index in range(0, len(row)):
                 if index == 0:
                     csv_file.write(f"\n{row[index]}")
-                    csv_file.write(", ")
+                    csv_file.write(",")
                 elif index == len(row) - 1:
                     csv_file.write(row[index])
                 else:
                     csv_file.write(row[index])
-                    csv_file.write(", ")
+                    csv_file.write(",")
 
-        return render_template('cafes.html')
+        return cafes()
 
     # Exercise:
     # Make the form write a new row into cafe-data.csv
